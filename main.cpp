@@ -63,3 +63,31 @@ ostream& operator<<(ostream& os, const Service &service)
     os << "Service ID    :" << service.serviceId;
     os << "Service Type  :" << service.serviceType;
 }
+
+class Garage
+{
+    vector<Car> licenses;
+    vector<Car> carModels;
+    vector<Car> ownerNames;
+    vector<Car> contactNumbers;
+    vector<Service> services;
+
+    public:
+        void register_car()
+        {
+            int license;
+            string carModel, OwnerName, contactNumber;
+            cout << "******************************************************************************"<<endl;
+            cout << "/t/t/tCar Registration" << endl;
+
+            cout << "License Number    :"<<endl;
+            cin >> license;
+            cout << "Car Model         :"<<endl;
+            cin >> carModel;
+            cout << "Owner Name        :"<<endl;
+            cin >> OwnerName;
+            cout << "Contact Number    :"<<endl;
+            cin >> contactNumber;
+
+        }
+};
